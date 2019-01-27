@@ -42,6 +42,9 @@ def platform_information(_linux_distribution=None):
         codename = 'virtuozzo'
     if not codename and 'arch' in distro.lower():  # this could be an empty string in Arch linux
         codename = 'arch'
+    if not codename and 'sotolito' in distro.lower():  # this could be an empty string in Sotolito Linux
+        codename='sotolito'
+
 
     return (
         str(distro).rstrip(),
