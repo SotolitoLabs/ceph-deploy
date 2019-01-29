@@ -119,7 +119,7 @@ def _normalized_distro_name(distro):
         return 'oracle'
     elif distro.startswith(('suse', 'opensuse', 'sles')):
         return 'suse'
-    elif distro.startswith(('centos', 'sotolito', 'Sotolito')):
+    elif distro.startswith('centos'):
         return 'centos'
     elif distro.startswith('linuxmint'):
         return 'ubuntu'
