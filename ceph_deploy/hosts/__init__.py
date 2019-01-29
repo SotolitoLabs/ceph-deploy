@@ -129,6 +129,8 @@ def _normalized_distro_name(distro):
         return 'arch'
     elif distro.startswith(('alt', 'altlinux', 'basealt', 'alt linux')):
         return 'alt'
+    elif distro.startswith(('sotolito', 'Sotolito')):
+        return 'fedora'
     return distro
 
 
